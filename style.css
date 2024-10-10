@@ -1,0 +1,282 @@
+/* Основные стили */
+body {
+    font-family: 'Avenir', sans-serif;
+    background: linear-gradient(135deg, #010008, #4b4444);
+    color: #b3f3d085; /* Уменьшенный контрастный цвет текста */
+    margin: 0;
+    padding: 180px; /* Увеличенные отступы по краям */
+    scroll-behavior: smooth;
+    font-size: 20px; /* Установите желаемый размер шрифта */
+}
+
+/* Вставьте здесь новый стиль для секции создания группы */
+
+.create-group {
+    max-width: 450px; /* Максимальная ширина блока */
+    margin: 25px auto; /* Центрирование блока */
+    padding: 25px; /* Внутренние отступы */
+    background-color: #1b1b1bc5; /* Цвет фона формы */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень вокруг формы */
+}
+
+h2 {
+    font-size: 1.7rem; /* Увеличенный размер заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    color: #FFAB40; /* Цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+    margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+h3 {
+    color: #FFAB40; /* Цвет заголовка h3 оранжевый */
+}
+
+/* Дополнительный стиль для секции заголовков, если это необходимо */
+.section-title {
+    color: #FFAB40; /* Цвет заголовка секции */
+    font-size: 2rem; /* Размер заголовка секции */
+    text-align: center; /* Центрирование заголовка секции */
+    margin-bottom: 20px; /* Отступ под заголовком секции */
+}
+
+
+label {
+    display: block; /* Блоковая модель для меток */
+    margin: 10px 0 5px; /* Отступы сверху и снизу */
+    font-weight: bold; /* Жирный шрифт для меток */
+    color: #B0B0B0; /* Цвет меток */
+}
+
+input[type="text"],
+textarea,
+input[type="number"],
+select {
+    width: 100%; /* Ширина полей ввода */
+    padding: 10px; /* Внутренние отступы */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #444; /* Цвет рамки */
+    border-radius: 4px; /* Скругление углов полей */
+    font-size: 16px; /* Размер шрифта */
+    background-color: #2a2a2a; /* Фон полей ввода */
+    color: #E0E0E0; /* Цвет текста полей */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Тень внутри полей */
+}
+
+button {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #FFFFFF; /* Цвет текста кнопки */
+    padding: 10px 15px; /* Внутренние отступы кнопки */
+    border: none; /* Убрать рамку */
+    border-radius: 4px; /* Скругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 16px; /* Размер шрифта кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень вокруг кнопки */
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #141414, #2b2b2b);
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 4px solid #FFAB40; /* Новый цвет границы */
+    position: relative;
+}
+
+/* Остальные стили... */
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem; /* Уменьшенный размер заголовка */
+    color: #FFAB40; /* Новый цвет заголовка */
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80px; /* Уменьшенный размер изображения */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b2b2b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    display: inline-block;
+    color: #B0B0B0; /* Цвет ссылок */
+    text-decoration: none;
+    font-size: 1.2rem; /* Уменьшенный размер шрифта */
+    font-weight: bold;
+    padding: 12px 25px; /* Уменьшенные отступы */
+    text-transform: uppercase;
+    margin: 0 8px; /* Уменьшенные отступы */
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFFFFF; /* Цвет ссылок при наведении */
+    border-bottom: 4px solid #FFAB40; /* Новый цвет границы */
+    transform: translateY(-2px);
+}
+
+/* Hero section */
+#hero {
+    background: linear-gradient(135deg, #140c0c, #1f1f1f); /* Фон как у body */
+    background-size: cover;
+    background-position: center;
+    color: #B0B0B0; /* Цвет текста */
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    z-index: 1;
+    color: #FFAB40; /* Цвет заголовка */
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    z-index: 1;
+    color: #B0B0B0; /* Цвет текста */
+}
+
+/* Grids */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid .item {
+    background-color: #333;
+    color: #df0909; /* Новый цвет текста */
+    border-radius: 8px; /* Скругление углов */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.grid .item:hover {
+    transform: scale(1.03);
+}
+
+.grid .item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.grid .item h3 {
+    font-size: 1.6rem; /* Уменьшенный размер заголовка */
+    margin-bottom: 10px;
+    color: #FFAB40; /* Новый цвет заголовка */
+}
+
+.grid .item p {
+    font-size: 1rem; /* Уменьшенный размер текста */
+    line-height: 1.4; /* Уменьшенная высота строки */
+}
+
+/* Accordion */
+.accordion {
+    background-color: #3a3a3a;
+    color: #E0E0E0; /* Новый цвет текста */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #444;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #2a2a2a;
+    color: #E0E0E0; /* Новый цвет текста */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #262626, #1b1b1b);
+    color: #aaa;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #FFAB40; /* Новый цвет границы */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 1.1rem; /* Уменьшенный размер шрифта */
+        padding: 10px 20px; /* Уменьшенные отступы */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Уменьшенный размер заголовка секции */
+    }
+
+    .content {
+        font-size: 1rem; /* Уменьшенный размер текста */
+    }
+
+    .grid .item img {
+        height: 150px; /* Уменьшенная высота изображений в сетке */
+    }
+}
+
+/* Круглые фотографии */
+.specialist img {
+    width: 150px; /* или другой размер, который вам нужен */
+    height: 150px; /* высота равна ширине для круговой формы */
+    border-radius: 50%; /* Скругление до круга */
+    object-fit: cover; /* Обеспечивает правильное отображение изображения */
+}
